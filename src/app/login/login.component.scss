@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .container {
     display: flex;
     flex-direction: column;
@@ -14,4 +16,41 @@
 
 .form {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 1em;  
+}
+
+.logo {
+    width: 65%;
+}
+
+.login-input {
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    border-bottom: solid $gray 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.language-chooser {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
 }

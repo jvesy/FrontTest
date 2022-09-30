@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+a {
+    color: $secondary;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        color: $secondary-variant
+    }
+    &.active {
+        color: $primary;
+        &:hover {
+            color: $primary-variant
+        }
+    }
+
+}
+
+input[type=button] {
+    cursor: pointer;
+    font-size: 1em;
+    padding: .5rem 2rem .5rem 2rem;
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid $primary;
+    border-radius: 100vmax;
+    &:hover {
+        background-color: $lightgray;
+    }
+}
