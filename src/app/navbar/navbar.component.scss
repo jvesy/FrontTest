@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item {
+    color: $darkgray;
+    position: relative;
+    &:hover:after {
+        display: block;
+        position: absolute;
+        content: "";
+        background: $secondary;
+        bottom: -.5em;
+        left: calc(50% - 15px);
+        height: 2px;
+        width: 30px;
+    }
+}
+
+.usermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.logo {
+    width: 150px;
+}

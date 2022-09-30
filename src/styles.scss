@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./variables.scss";
 
+@font-face {
+    font-family: sonar;
+    src: local("sonar"), url(./assets/icons/fonts/sonar.ttf) format("truetype");
+}
+
+.font-sonar {
+    font-family: sonar;
+}
+
 a {
     color: $secondary;
     text-decoration: none;
