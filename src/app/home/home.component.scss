@@ -43,3 +43,20 @@
 .hero-card-body {
     overflow: scroll;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: row;
+}
+
+app-product + app-product {
+    border-left: 2px solid $lightgray;
+}
